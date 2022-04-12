@@ -1,6 +1,5 @@
-
-
 package com.example.springmyitems.config;
+
 import org.springframework.context.MessageSource;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -39,11 +38,8 @@ public class I18nConfig implements WebMvcConfigurer {
         return messageSource;
     }
 
-
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
         registry.addInterceptor(localeChangeInterceptor());
     }
-
-
 }

@@ -31,4 +31,5 @@ public class Item {
     @OneToMany(mappedBy = "item")
     private List<ItemImage> itemImages;
 
+
 }
